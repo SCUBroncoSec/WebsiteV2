@@ -141,10 +141,12 @@ export const EncryptedText: React.FC<EncryptedTextProps> = ({
         const isRevealed = index < revealCount;
         const displayChar = !mounted
           ? char
-          : char === " "
-            ? " "
-            : (scrambleCharsRef.current[index] ??
-              generateRandomCharacter(charset));
+          : isRevealed
+            ? char
+            : char === " "
+              ? " "
+              : (scrambleCharsRef.current[index] ??
+                generateRandomCharacter(charset));
 
         return (
           <span
