@@ -1,0 +1,50 @@
+.container {
+  display: flex;          
+  align-items: center;    
+  gap: 12px;              
+}
+
+.headerimage {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromUnder {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text {
+  margin: 0;            
+}
+
+.headertext {
+  font-size: 100px; 
+  margin: 0;
+  font-weight: bold;
+animation: slideInFromUnder 0.8s ease-out forwards;
+
+}
+
+body {
+  background-color: maroon; 
+}
