@@ -14,12 +14,11 @@ const HeroSection = () => {
                     className={cn(
                     "fixed inset-0 z-0",
                     "bg-size-[20px_20px]",
-                    "bg-[radial-gradient(#d4d4d4_1px,transparent_1px)]",
-                    "dark:bg-[radial-gradient(#404040_1px,transparent_1px)]",
+                    "bg-[radial-gradient(#404040_1px,transparent_1px)]",
                     )}
                 />
                 {/* Radial gradient for the container to give a faded look */}
-                <div className="pointer-events-none fixed inset-0 z-10 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+                <div className="pointer-events-none fixed inset-0 z-10 flex items-center justify-center bg-black mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 
                 <Spotlight />
                 
@@ -29,7 +28,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.3, ease: [0.33, 1, 0.68, 1] }}
                     className="text-2xl px-4 md:text-4xl lg:text-5xl text-center mx-auto font-bold"
                     >
-                    <Highlight className="text-black dark:text-white">
+                    <Highlight className="text-white">
                         <span className="bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
                         BroncoSec
                         </span>
