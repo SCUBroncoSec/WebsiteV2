@@ -1,21 +1,36 @@
 import React from "react";
+import headerImage from "public/IMG_0887.webp";
+
 
 const ImageWithTextComponent = () => {
   return (
     <div className="container">
       <img
-        src="https://www.digitalmusicnews.com/wp-content/uploads/2025/06/never-gonna-give-you-up-spotify-billions-club-1024x576.jpg"
+        src="IMG_0887.webp"
         alt="Description"
         className="headerimage"
       />
 
-      <p className="headertext">
-        <strong>BroncoCTF</strong><br />
-        
-      </p>
-      <p className = "text">
-          Santa Clara University's Best Competition
-      </p>
+  <div className="header">
+  <p className="headertext">
+    <strong>BroncoCTF</strong>
+  </p>
+   <p className="textdate">
+    February 18, 2025
+  </p>
+  <p className="text">
+    Santa Clara University's International Capture the Flag Competition
+  </p>
+ 
+  
+  <button className="registration_Button">
+    <div>
+      Register Today
+    </div>
+  </button>
+
+</div>
+
 
     </div>
   );

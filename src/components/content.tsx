@@ -48,7 +48,7 @@ const Content = () => {
                 },
                 {
                     title: "Outreach Coordinator - Evan Chin",
-                    src: "https://www.scuacm.com/assets/Evan_Chin-D_e0jeS9.jpg",
+                    src: "/Evan_C.jpg",
                 }
             ]} />
 

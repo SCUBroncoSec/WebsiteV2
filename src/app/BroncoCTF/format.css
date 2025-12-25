@@ -1,16 +1,127 @@
 .container {
-  display: flex;          
-  align-items: center;    
-  gap: 12px;              
+  display: flex;
+
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*THIS IS THE STUFF THAT YOU SEE WHEN THE PAGE LOADS IN!!!!*/
 .headerimage {
-  width: 600px;
-  height: 600px;
+  width: 650px;
+  height: 650px;
   object-fit: cover;
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
+.headertext {
+  font-size: 100px;
+  margin: 0;  
+  font-weight: bold;
+  animation: slideInFromOver 0.8s ease-out forwards;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*END OF THE STUFF FOR WHEN THE PAGE LOADS IN*/
+
+/* This is for the header of the broncoCTF page (has the logo about etc)*/
+.headerbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 3rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;    
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+ 
+}
+
+.headerlogo {
+  position: absolute;
+  left: .7rem;
+  top: .7rem;
+
+}
+
+.PastProbs{
+  right: 2rem;                 
+  
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+
+  background-color: #c62828;   
+  color: white;
+
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  border: none;
+
+  cursor: pointer;
+  text-decoration: none;       
+}
+
+.PastProbs:hover {
+  background-color: #a61f1f;
+}
+
+.registration_Button:hover {
+  background-color: #8f1515;
+  transform: translateY(-2px);
+}
+
+.registration_Button:active {
+  transform: translateY(0);
+}
+
+
+
+/*END OF THE HEADER FOR THE BRONCOCTF PAGE*/
+
+
+
+
+
+
+/*SPONSOR STUFF*/
+.SponsorHeader{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin-top: 30 px;
+}
+
+.AboutHeader{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+
+.logoimg{
+  width: 100px;
+  height: 100px;
+  flex: 1;
+
+}
+
+.boxHeader{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+/*END OF SPONSOR STUFF*/
+
+/*ANIMATIONS FOR THE IMAGE AND HEADER*/
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-50px);
@@ -18,6 +129,17 @@
   }
   to {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromOver {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -33,18 +155,122 @@
   }
 }
 
+/* END OF ANIMATIONS FOR THE IMAGE AND HEADER*/
+
+
 .text {
-  margin: 0;            
+  margin: 5;  
+  font-weight: bold;
+  animation: slideInFromUnder 0.8s ease-out forwards;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+
+
 }
 
-.headertext {
-  font-size: 100px; 
-  margin: 0;
+.textdate {
+  margin: 5;  
   font-weight: bold;
-animation: slideInFromUnder 0.8s ease-out forwards;
+  animation: slideInFromUnder 0.8s ease-out forwards;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+}
 
+
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
 }
 
 body {
-  background-color: maroon; 
+  background-color: #D3D3D3; 
+  
 }
+
+.registration_Button {
+  margin-top: 100px;
+  padding: 12px 28px;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: #b31b1b; 
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+/*TEST FOR THE ACCORDION*/
+.accordion-container {
+  display: flex;           
+  justify-content: space-between; 
+  max-width: 1000px;       
+  margin: 0 auto;          
+  padding: 0 20px;
+  gap: 40px;               
+  margin-bottom: 50px;
+}
+
+.accordion {
+  flex: 2;                 
+}
+
+
+
+.FAQImage {
+  flex: 1;                 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 300px;
+  height: 300px;
+}
+
+.accordion-item {
+  margin-left: 0;          
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-header h3 span{
+  margin: 0;
+}
+
+.accordion-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.accordion-content p {
+  flex: 2;
+}
+
+.FAQHeader {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 20px;
+}
+
+
+/*END OF ACCORDION CONTENT*/
