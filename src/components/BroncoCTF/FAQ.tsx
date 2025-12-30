@@ -36,10 +36,10 @@ const FAQ: React.FC = () => {
     </div>
     <div className="FAQImage">
     <Image
-          src="/ShieldHorse.webp"
+          src="/ShieldBuckyGlow.webp"
           alt="BroncoSec Logo"
-          width={140}
-          height={50}
+          width={300}
+          height={400}
         />
     </div>
   </div>

@@ -48,7 +48,7 @@ const Content = () => {
                 },
                 {
                     title: "Outreach Coordinator - Evan Chin",
-                    src: "/Evan_C.jpg",
+                    src: "/EvanC.png", // TODO: This is using a local image, change SCUACM Picture!!!
                 }
             ]} />
 

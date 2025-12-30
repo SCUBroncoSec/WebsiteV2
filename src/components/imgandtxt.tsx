@@ -6,7 +6,7 @@ const ImageWithTextComponent = () => {
   return (
     <div className="container">
       <img
-        src="IMG_0887.webp"
+        src="FlagBuckyGlow.webp"
         alt="Description"
         className="headerimage"
       />
