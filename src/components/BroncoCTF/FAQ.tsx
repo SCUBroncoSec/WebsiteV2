@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
 
     </div>
     <div className="FAQImage">
-    <Image
+    <img
           src="/ShieldBuckyGlow.webp"
           alt="BroncoSec Logo"
           width={300}

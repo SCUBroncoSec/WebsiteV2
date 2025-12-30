@@ -5,13 +5,38 @@ import { HoverEffect } from "./ui/card-hover-effect";
 const Content = () => {
     return (
         <div className="relative z-20">
+
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+                What We Do:
+            </span>
+
+            <FocusCards cards={[
+                {
+                    title: "Weekly Workshops",
+                    src: "workshops.webp",
+                    desc: "We host weekly cybersecurity workshops focused on safe developer practices.",
+                },
+                {
+                    title: "CTF Competitions",
+                    src: "ctftime.webp",
+                    desc: "We participate in online Capture the Flag competitions held by organizations around the world.",
+                },
+                {
+                    title: "BroncoCTF",
+                    src: "FlagBuckyGlow.webp",
+                    desc: "Our flagship CTF event, held annually in February.",
+                }
+            ]} />
+
+
+
             <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
                 Board Members:
             </span>
 
             <FocusCards cards={[
                 {
-                    title: "President - Ethan Sychango",
+                    title: "President - Ethan Sychangco",
                     src: "https://www.scuacm.com/assets/Ethan_Sychangco-DcR4UfuN.png",
                 },
                 {
@@ -59,21 +84,27 @@ const Content = () => {
             <div className="max-w-5xl mx-auto px-8">
                 <HoverEffect items={[
                     {
+                        title: "Events",
+                        description:
+                          "Visit the ACM Event List to find the next BroncoSec event",
+                        link: "https://www.scuacm.com/events",
+                    },
+                    {
                         title: "Mailing List",
                         description:
-                          "Join our mailing list",
+                          "Sign up for our mailing list",
                         link: "https://forms.gle/kk6AEfMapfp5Udgi8",
                       },
                       {
                         title: "Discord",
                         description:
-                          "Join our Discord server",
+                          "Join the ACM Discord server and visit the BroncoSec section",
                         link: "https://discord.gg/EbjxNFtSkb",
                       },
                       {
                         title: "Instagram",
                         description:
-                          "Follow our page",
+                          "Follow our Instagram page",
                         link: "https://www.instagram.com/scubroncosec/",
                       },
                       {

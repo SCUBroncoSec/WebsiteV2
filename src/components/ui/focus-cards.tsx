@@ -9,11 +9,13 @@ export const Card = React.memo(
     index,
     hovered,
     setHovered,
+    desc,
   }: {
     card: any;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
+    desc?: string;
   }) => (
     <div
       onMouseEnter={() => setHovered(index)}
@@ -47,6 +49,7 @@ Card.displayName = "Card";
 type Card = {
   title: string;
   src: string;
+  desc?: string;
 };
 
 export function FocusCards({ cards }: { cards: Card[] }) {
@@ -55,13 +58,28 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
       {cards.map((card, index) => (
-        <Card
-          key={card.title}
-          card={card}
-          index={index}
-          hovered={hovered}
-          setHovered={setHovered}
-        />
+        <div key={card.title} className="w-full overflow-visible">
+          <Card
+            card={card}
+            index={index}
+            hovered={hovered}
+            setHovered={setHovered}
+            desc={card.desc}
+          />
+          {/* Desc logic goes here so it can render outside the card */}
+          {card.desc && (
+            <div
+              className={cn(
+                "mt-3 text-md text-white transition-all duration-300 ease-out transform origin-top",
+                hovered === index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-2 pointer-events-none"
+              )}
+            >
+              {card.desc}
+            </div>
+          )}
+        </div>
       ))}
     </div>
   );

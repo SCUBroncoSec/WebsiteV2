@@ -17,7 +17,7 @@ const HeaderBroncoCTF: React.FC = () => {
   </nav>
 
   <a href="/" className="headerlogo">
-    <Image
+    <img
       src="/BroncoSec_Logo_Red.webp"
       alt="BroncoSec Logo"
       width={140}
