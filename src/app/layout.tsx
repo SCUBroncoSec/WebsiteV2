@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BroncoSec",
   description: "SCU's cyber security club",
+  openGraph: {
+    title: "BroncoSec",
+    description: "Santa Clara University's premier cyber security club",
+    url: "https://broncosec.com/WebsiteV2/", // replace with your production URL
+    images: [
+      {
+        url: "/icon.png",
+        alt: "BroncoSec logo",
+      },
+    ],
+  },
+  themeColor: "#B7010E",
 };
 
 export default function RootLayout({
