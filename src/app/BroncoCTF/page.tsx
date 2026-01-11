@@ -23,11 +23,37 @@ export default function Subpage() {
         <HeroSection title="BroncoCTF" subtext="Santa Clara University's annual cybersecurity competition" />
         {/* <Content />
         <Footer /> */}
-        
       </div>
     </main>
 
+    <div>
+      <HeaderBroncoCTF/>
+    </div>
+    <div>
+      <ImageWithTextComponent />
+    </div>
 
+    <div>
+      <AboutTheComp />
+    </div>
+
+    <div>
+      <AboutUs />
+    </div>
+    
+    <div>
+      <FAQ />
+    </div>
+
+    <div> 
+      <SponsorBroncoCTF />
+    </div>
+
+    
+      <div className="max-w-7xl w-full">
+        <FooterForBroncoCTF />
+      </div>  
+      
         
     </>
   );

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
 type SpotlightProps = {
@@ -19,13 +20,24 @@ export const Spotlight = ({
   gradientFirst = "radial-gradient(60% 60% at 50% 30%, hsla(0,100%,50%,0.12) 0%, hsla(0,100%,50%,0.06) 35%, hsla(0,100%,50%,0.03) 60%, hsla(0,100%,50%,0.015) 75%, transparent 100%)",
   gradientSecond = "radial-gradient(50% 50% at 50% 50%, hsla(0, 100%, 70%, 0.08) 0%, hsla(0, 100%, 50%, 0.03) 80%, transparent 100%)",
   gradientThird = "radial-gradient(50% 50% at 50% 50%, hsla(0, 100%, 70%, 0.05) 0%, hsla(0, 100%, 45%, 0.02) 80%, transparent 100%)",
-  translateY = window.innerHeight / 4,
+  translateY = 1000, // will get edited later for dynamic window sizing
   width = 800,
   height = 1600,
   smallWidth = 240,
   duration = 7,
   xOffset = 100,
 }: SpotlightProps = {}) => {
+
+    const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    // This code runs only in the browser
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      translateY = window.innerHeight / 4
+    }
+  }, []); // Empty dependency array means it runs once on mount
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
