@@ -7,7 +7,7 @@ import { Highlight } from "./ui/hero-highlight"
 import { Spotlight } from "@/components/ui/spotlight-new";
 
 
-const HeroSection = () => {
+const HeroSection = ({ title, subtext }: { title: string; subtext: string }) => {
     return (
             <div className="relative w-full min-h-screen mx-auto flex flex-col items-center justify-center">
                 <div
@@ -30,14 +30,14 @@ const HeroSection = () => {
                     >
                     <Highlight className="text-white">
                         <span className="bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
-                        BroncoSec
+                        {title}
                         </span>
                     </Highlight>
                 </motion.h1>
 
                 <p className="relative z-20 mx-auto py-5 text-center text-4xl">
                     <EncryptedText
-                        text="Santa Clara University's premier cyber security club"
+                        text={subtext}
                         encryptedClassName="text-red-900"
                         revealedClassName="bg-gradient-to-b from-rose-400 to-zinc-900 bg-clip-text py-5 text-4xl font-bold text-transparent"
                         revealDelayMs={30}

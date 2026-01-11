@@ -8,11 +8,12 @@ import Header from "@/components/header";
 
 
 export default function Home() {
-  return (<>
+  return (
+    <>
     <Header />
     <main className="relative min-h-screen bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 pt-16">
       <div className="max-w-7xl w-full">
-        <HeroSection />
+        <HeroSection title="BroncoSec" subtext="Santa Clara University's premier cyber security club" />
         <Content />
         <Footer />
       </div>
