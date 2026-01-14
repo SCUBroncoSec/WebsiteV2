@@ -9,14 +9,11 @@ const Header = () => {
           <Link href="/">BroncoSec</Link>
         </div>
 
-        <nav className="flex gap-6">
-          <Link
-            href="/BroncoCTF"
-            className="text-xl font-bold"
-          >
-            BRONCOCTF
-          </Link>
-        </nav>
+        <nav className="flex gap-6"/>
+        <div className="text-xl font-bold">
+
+          <Link href="/BroncoCTF">BroncoCTF</Link>
+        </div>
       </div>
     </header>
   );
