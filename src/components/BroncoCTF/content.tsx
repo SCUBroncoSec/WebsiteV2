@@ -13,7 +13,7 @@ const Content = () => {
                 About the Competititon
             </span>
 
-            <TwoColumn img="/original-art/Final_Horse_With_Flag_final.webp" imgAlt="BroncoCTF">
+            <TwoColumn img="original-art/Final_Horse_With_Flag_final.webp" imgAlt="BroncoCTF">
                 BroncoCTF is an international CTF competition hosted by BroncoSec. It runs in conjunction with <a className="text-decoration: underline" href="https://hackforhumanity.io/">Hack for Humanity</a>, Santa Clara University's social good hackathon. <br /><br />
                 In BroncoCTF, teams of students solve various cybersecurity challenges by hunting for secret flags hidden in programs, cryptosystems, files, and even games! Use your ethical hacking skills to solve digital puzzles involving real-world technologies. <br /><br />
                 There are challenges for complete beginners and experienced hackers alike. Cash prizes are awarded to top Santa Clara University students, while the world can compete for bragging rights. <br /><br />
@@ -29,42 +29,42 @@ const Content = () => {
                 {
                     title: "Global Participants",
                     number: 1731,
-                    icon: "/person-colorized.svg",
+                    icon: "person-colorized.svg",
                     desc: "",
                     idx: 0
                 },
                 {
                     title: "Global Teams",
                     number: 806,
-                    icon: "/team-colorized.svg",
+                    icon: "team-colorized.svg",
                     desc: "",
                     idx: 1
                 },
                 {
                     title: "Participating Countries",
                     number: 96,
-                    icon: "/earth-colorized.svg",
+                    icon: "earth-colorized.svg",
                     desc: "",
                     idx: 2
                 },
                 {
                     title: "Total Challenges",
                     number: 40,
-                    icon: "/flag-colorized.svg",
+                    icon: "flag-colorized.svg",
                     desc: "",
                     idx: 3
                 },
                 {
                     title: "Flag Submissions",
                     number: 25894,
-                    icon: "/progress-flag-colorized.svg",
+                    icon: "progress-flag-colorized.svg",
                     desc: "",
                     idx: 4
                 },
                 {
                     title: "Incorrect Flag Submissions",
                     number: 18554,
-                    icon: "/wrong-flag-colorized.svg",
+                    icon: "wrong-flag-colorized.svg",
                     desc: "",
                     idx: 5
                 }
@@ -100,7 +100,7 @@ const Content = () => {
                 Sponsors
             </span>
 
-                <TwoColumn img="/original-art/Final_Horse_final.webp" imgAlt="BroncoCTF Sponsorship"
+                <TwoColumn img="original-art/Final_Horse_final.webp" imgAlt="BroncoCTF Sponsorship"
                 flip={true}>
                     We're looking for sponsors! Please reach out at santaclara.broncosec@gmail.com if you'd like to help our competition!
 
