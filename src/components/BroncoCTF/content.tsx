@@ -100,7 +100,7 @@ const Content = () => {
                 Sponsors
             </span>
 
-                <TwoColumn img="original-art/Final_Horse_final.webp" imgAlt="BroncoCTF Sponsorship"
+                <TwoColumn img="original-art/Final_Horse_ad_final.webp" imgAlt="BroncoCTF Sponsorship"
                 flip={true}>
                     We're looking for sponsors! Please reach out at santaclara.broncosec@gmail.com if you'd like to help our competition!
 
