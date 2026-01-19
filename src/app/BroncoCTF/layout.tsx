@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://broncosec.com/WebsiteV2/BroncoCTF", // replace with your production URL
     images: [
       {
-        url: "../icon.png",
+        url: "icon.png",
         alt: "BroncoSec logo",
       },
     ],
