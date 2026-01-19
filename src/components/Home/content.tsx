@@ -14,7 +14,7 @@ const Content = () => {
                 {
                     title: "Weekly Workshops",
                     src: "workshops.webp",
-                    desc: "We host weekly cybersecurity workshops focused on safe developer practices.",
+                    desc: "We host weekly cybersecurity workshops focused on safe developer practices and ethical hacking.",
                 },
                 {
                     title: "CTF Competitions",
@@ -23,8 +23,8 @@ const Content = () => {
                 },
                 {
                     title: "BroncoCTF",
-                    src: "FlagBuckyGlow.webp",
-                    desc: "Our flagship CTF event, held annually in February.",
+                    src: "original-art/Final_Horse_With_Flag_final.webp",
+                    desc: "We host our flagship CTF event annually in February.",
                 }
             ]} />
 

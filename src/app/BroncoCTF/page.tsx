@@ -14,7 +14,7 @@ export default function Subpage() {
       <div className="max-w-7xl w-full">
         <HeroSection title="BroncoCTF" subtext="Santa Clara University's international cybersecurity competition" subtext2="February 28, 2025" imagePath="original-art/Horse_Knight_final.webp"> 
         
-          <button className="registration_Button" style={{zIndex: 1}}>Register</button>
+          <button className="registration_Button" style={{zIndex: 1, cursor:"not-allowed"}}>Registration Coming Soon</button>
         
         </HeroSection>
         <Content />

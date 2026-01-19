@@ -36,7 +36,7 @@ export const Card = React.memo(
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-200">
+        <div className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-100">
           {card.title}
         </div>
       </div>
@@ -70,7 +70,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
           {card.desc && (
             <div
               className={cn(
-                "mt-3 text-md text-white transition-all duration-300 ease-out transform origin-top",
+                "mt-3 text-lg text-white transition-all duration-300 ease-out transform origin-top",
                 hovered === index
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 -translate-y-2 pointer-events-none"

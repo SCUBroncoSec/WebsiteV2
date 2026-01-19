@@ -9,7 +9,7 @@ const Footer = ({ children }:
             <br/>
             Site content and components by <a className="text-decoration: underline" href="https://github.com/ethansy878" target="_blank" rel="noopener noreferrer">@ethansy878</a>
             <br/>
-            BroncoCTF content structure by <a className="text-decoration: underline" href="https://github.com/orgs/SCUBroncoSec/people/evanc517" target="_blank" rel="noopener noreferrer">@evanc517</a>
+            BroncoCTF content structure by <a className="text-decoration: underline" href="https://github.com/evanc517" target="_blank" rel="noopener noreferrer">@evanc517</a>
             <br/>
             Art by Anni L. '28
                 </p>
