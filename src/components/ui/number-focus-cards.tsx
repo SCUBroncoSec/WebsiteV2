@@ -8,6 +8,7 @@ type Item = {
   number: number;
   icon?: string;
   desc?: string;
+  idx: number;
 };
 
 const NumberCard = React.memo(
@@ -63,8 +64,11 @@ const NumberCard = React.memo(
       return () => cancelAnimationFrame(rafId);
     }, [visible, item.number]);
 
-    const rows = 10;
-    const cols = 10;
+    // was gonna make each one have a different grid size,
+    // but that didn't work out.
+    // array notation is left for legacy purposes
+    const rows =[10, 10, 10, 10, 10, 10];
+    const cols = [10, 10, 10, 10, 10, 10];
 
     return (
       <div
@@ -82,30 +86,34 @@ const NumberCard = React.memo(
           <img
             src={item.icon}
             alt={item.title}
-            className="large-icon absolute inset-0 w-full h-full object-cover z-0 p-10"
+            className="large-icon absolute inset-0 w-auto h-auto object-cover z-0 p-10"
             style={{
-              transition: "opacity 1000ms ease",
+              transition: "opacity 500ms ease",
               opacity: hovered === index ? 0 : 1,
             }}
           />
         )}
 
         {/* Grid of small icons (fills card) */}
-        {item.icon && hovered === index && (
-          <div className="icon-grid absolute inset-0 pointer-events-none">
-            {Array.from({ length: rows * cols }).map((_, i) => {
-              const r = Math.floor(i / cols);
-              const c = i % cols;
-              const delay = (r * cols + c) * 0; // decision: SET TO 0
+        {item.icon && (
+          <div className="icon-grid absolute inset-0 pointer-events-none" style={{
+              transition: "opacity 500ms",
+              opacity: hovered === index ? 1 : 0,
+            }}
+>
+            {Array.from({ length: rows[item.idx] * cols[item.idx] }).map((_, i) => {
+              const r = Math.floor(i / cols[item.idx]);
+              const c = i % cols[item.idx];
+              const delay = (r * cols[item.idx] + c) * 0; // decision: SET TO 0
               return (
                 <div
                   key={i}
                   className="grid-cell"
                   style={{
-                    width: `${200 / cols}%`,
-                    height: `${200 / rows}%`,
-                    left: `${(c * 200) / cols}%`,
-                    top: `${(r * 200) / rows}%`,
+                    width: `${200 / cols[item.idx]}%`,
+                    height: `${200 / rows[item.idx]}%`,
+                    left: `${(c * 200) / cols[item.idx]}%`,
+                    top: `${(r * 200) / rows[item.idx]}%`,
                     position: "absolute",
                     padding: "2%",
                     boxSizing: "border-box",
@@ -139,7 +147,7 @@ const NumberCard = React.memo(
             hovered === index ? "opacity-100" : "opacity-0"
           )}
         >
-          <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-200">
+          <div className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-200">
             {item.title}
           </div>
         </div>
@@ -148,16 +156,16 @@ const NumberCard = React.memo(
         <style>{`
           .number-card .icon-grid { display: block; }
           .number-card .grid-cell { opacity: 0.9; display: flex; align-items: center; justify-content: center; }
-          .number-card .grid-cell img { transform-origin: center; transition: transform 400ms ease, opacity 1000ms ease; }
+          .number-card .grid-cell img { transform-origin: center; transition: transform 400ms ease, opacity 500ms ease; }
 
           /* keyframes move towards top-right and rotate 45deg */
           @keyframes moveTR {
-            0% { transform: translate3d(-250%,0%,0) rotate(-10deg); }
-            100% { transform: translate3d(0%,-250%,0) rotate(-10deg); }
+            0% { transform: translate3d(-250%,0%,0) rotate(0); }
+            100% { transform: translate3d(0%,-250%,0) rotate(0); }
           }
 
           /* When hovering, animate each cell to move to top-right in an alternating loop */
-          .number-card.hovering .grid-cell img {
+          .number-card .grid-cell img {
             animation: moveTR 10s linear infinite;
           }
 

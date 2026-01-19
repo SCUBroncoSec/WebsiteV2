@@ -14,7 +14,7 @@ const Content = () => {
             </span>
 
             <TwoColumn img="/original-art/Final_Horse_With_Flag_final.webp" imgAlt="BroncoCTF">
-                BroncoCTF is an international CTF competition hosted by BroncoSec. It runs in conjunction with Hack for Humanity, Santa Clara University's social good hackathon. <br /><br />
+                BroncoCTF is an international CTF competition hosted by BroncoSec. It runs in conjunction with <a className="text-decoration: underline" href="https://hackforhumanity.io/">Hack for Humanity</a>, Santa Clara University's social good hackathon. <br /><br />
                 In BroncoCTF, teams of students solve various cybersecurity challenges by hunting for secret flags hidden in programs, cryptosystems, files, and even games! Use your ethical hacking skills to solve digital puzzles involving real-world technologies. <br /><br />
                 There are challenges for complete beginners and experienced hackers alike. Cash prizes are awarded to top Santa Clara University students, while the world can compete for bragging rights. <br /><br />
                 BroncoCTF 2026 will be our fifth CTF, and our third year hosting the event globally!
@@ -24,170 +24,87 @@ const Content = () => {
                 2025 Statistics
             </span>
 
-            <NumberFocusCards items={[
-                {
-                    title: "Global Participants",
-                    number: 1731,
-                    desc: "",
-                },
-                {
-                    title: "Global Teams",
-                    number: 806,
-                    desc: "",
-                },
-                {
-                    title: "Participating Countries",
-                    number: 96,
-                    desc: "",
-                },
-                {
-                    title: "Flag Submissions",
-                    number: 25894,
-                    desc: "",
-                },
-                {
-                    title: "Incorrect Flag Submissions",
-                    number: 18554,
-                    desc: "",
-                },
-                {
-                    title: "Total Challenges",
-                    number: 40,
-                    desc: "",
-                }
-            ]} />
-
-
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
-                Thank you to our sponsors:
-            </span>
 
             <NumberFocusCards items={[
                 {
                     title: "Global Participants",
                     number: 1731,
-                    icon: "/person.svg",
+                    icon: "/person-colorized.svg",
                     desc: "",
+                    idx: 0
                 },
                 {
                     title: "Global Teams",
                     number: 806,
                     icon: "/team-colorized.svg",
                     desc: "",
+                    idx: 1
                 },
                 {
                     title: "Participating Countries",
                     number: 96,
+                    icon: "/earth-colorized.svg",
                     desc: "",
-                },
-                {
-                    title: "Flag Submissions",
-                    number: 25894,
-                    desc: "",
-                },
-                {
-                    title: "Incorrect Flag Submissions",
-                    number: 18554,
-                    desc: "",
+                    idx: 2
                 },
                 {
                     title: "Total Challenges",
                     number: 40,
+                    icon: "/flag-colorized.svg",
                     desc: "",
+                    idx: 3
+                },
+                {
+                    title: "Flag Submissions",
+                    number: 25894,
+                    icon: "/progress-flag-colorized.svg",
+                    desc: "",
+                    idx: 4
+                },
+                {
+                    title: "Incorrect Flag Submissions",
+                    number: 18554,
+                    icon: "/wrong-flag-colorized.svg",
+                    desc: "",
+                    idx: 5
                 }
             ]} />
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
-                Board Members:
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
+                Past Repositories
             </span>
 
-            <FocusCards cards={[
-                {
-                    title: "President - Ethan Sychangco",
-                    src: "https://www.scuacm.com/assets/Ethan_Sychangco-DcR4UfuN.png",
-                },
-                {
-                    title: "Vice President - William Patmore",
-                    src: "https://www.scuacm.com/assets/William_Patmore-9ulofXry.jpg",
-                },
-                {
-                    title: "CTF Lead - Kara Barrese",
-                    src: "https://www.scuacm.com/assets/Kara_Barrese-BkQrBfcQ.jpg",
-                },
-                {
-                    title: "Event Lead - Viet Ha",
-                    src: "https://www.scuacm.com/assets/Viet_Ha-Dk_WdfCY.png",
-                },
-                {
-                    title: "Event Lead - Huy Ngo",
-                    src: "https://www.scuacm.com/assets/Huy_Ngo-CFK0IeP5.jpeg",
-                },
-                {
-                    title: "Event Lead - Eric Wei",
-                    src: "https://www.scuacm.com/assets/Eric_Wei-BE8VWLLN.jpg",
-                },
-                {
-                    title: "Event Lead - Tate Steven-Schneider",
-                    src: "https://www.scuacm.com/assets/Tate_Steven-Schneider-B6d82dI1.jpg",
-                },
-                {
-                    title: "Publicity Manager - Tiffany Nguyen",
-                    src: "https://www.scuacm.com/assets/Tiffany_Nguyen-CfNTYE7j.png",
-                },
-                {
-                    title: "Treasurer - Jason Wu",
-                    src: "https://www.scuacm.com/assets/Jason_Wu-Ds_PEfUf.jpg",
-                },
-                {
-                    title: "Outreach Coordinator - Evan Chin",
-                    src: "/EvanC.png", // TODO: This is using a local image, change SCUACM Picture!!!
-                }
-            ]} />
-
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
-                Get Involved
-            </span>
-
-            <div className="max-w-5xl mx-auto px-8">
                 <HoverEffect items={[
                     {
-                        title: "Events",
+                        title: "BroncoCTF 2025",
                         description:
-                          "Visit the ACM Event List to find the next BroncoSec event",
-                        link: "https://www.scuacm.com/events",
+                          "Our biggest CTF yet",
+                        link: "https://github.com/SCUBroncoSec/BroncoCTF-2025-Public",
                     },
                     {
-                        title: "Mailing List",
+                        title: "BroncoCTF 2024",
                         description:
-                          "Sign up for our mailing list",
-                        link: "https://forms.gle/kk6AEfMapfp5Udgi8",
+                          "First time going global",
+                        link: "https://github.com/SCUBroncoSec/BroncoCTF-2024-Public",
                       },
                       {
-                        title: "Discord",
+                        title: "BroncoCTF 2023",
                         description:
-                          "Join the ACM Discord server and visit the BroncoSec section",
-                        link: "https://discord.gg/EbjxNFtSkb",
-                      },
-                      {
-                        title: "Instagram",
-                        description:
-                          "Follow our Instagram page",
-                        link: "https://www.instagram.com/scubroncosec/",
-                      },
-                      {
-                        title: "GitHub",
-                        description:
-                          "View our GitHub page",
-                        link: "https://github.com/SCUBroncoSec",
-                      },
-                      {
-                        title: "Inquiries",
-                        description:
-                          "Contact us at santaclara.broncosec@gmail.com",
-                        link: "mailto:santaclara.broncosec@gmail.com",
-                      },
-                ]} />
-            </div>
+                            "In-person competition featuring a live tiebreaker",
+                        link: "https://github.com/SCUBroncoSec/BroncoCTF-2023-Internal",
+                    },
+                        ]} />
+
+
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
+                Sponsors
+            </span>
+
+                <TwoColumn img="/original-art/Final_Horse_final.webp" imgAlt="BroncoCTF Sponsorship"
+                flip={true}>
+                    We're looking for sponsors! Please reach out at santaclara.broncosec@gmail.com if you'd like to help our competition!
+
+            </TwoColumn>
 
         </div>
     )
