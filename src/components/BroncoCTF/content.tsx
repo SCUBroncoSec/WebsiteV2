@@ -2,12 +2,14 @@ import React from "react";
 import { FocusCards } from "../ui/focus-cards";
 import { HoverEffect } from "../ui/card-hover-effect";
 import { TwoColumn } from "../ui/two-column";
+import { NumberFocusCards } from "../ui/number-focus-cards";
+
 
 const Content = () => {
     return (
         <div className="relative z-20">
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 About the Competititon
             </span>
 
@@ -18,30 +20,82 @@ const Content = () => {
                 BroncoCTF 2026 will be our fifth CTF, and our third year hosting the event globally!
             </TwoColumn>
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 2025 Statistics
             </span>
 
-
-            <FocusCards cards={[
+            <NumberFocusCards items={[
                 {
-                    title: "Weekly Workshops",
-                    src: "workshops.webp",
-                    desc: "We host weekly cybersecurity workshops focused on safe developer practices.",
+                    title: "Global Participants",
+                    number: 1731,
+                    desc: "",
                 },
                 {
-                    title: "CTF Competitions",
-                    src: "ctftime.webp",
-                    desc: "We participate in online Capture the Flag competitions held by organizations around the world.",
+                    title: "Global Teams",
+                    number: 806,
+                    desc: "",
                 },
                 {
-                    title: "BroncoCTF",
-                    src: "FlagBuckyGlow.webp",
-                    desc: "Our flagship CTF event, held annually in February.",
+                    title: "Participating Countries",
+                    number: 96,
+                    desc: "",
+                },
+                {
+                    title: "Flag Submissions",
+                    number: 25894,
+                    desc: "",
+                },
+                {
+                    title: "Incorrect Flag Submissions",
+                    number: 18554,
+                    desc: "",
+                },
+                {
+                    title: "Total Challenges",
+                    number: 40,
+                    desc: "",
                 }
             ]} />
 
 
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
+                Thank you to our sponsors:
+            </span>
+
+            <NumberFocusCards items={[
+                {
+                    title: "Global Participants",
+                    number: 1731,
+                    icon: "/person.svg",
+                    desc: "",
+                },
+                {
+                    title: "Global Teams",
+                    number: 806,
+                    icon: "/team-colorized.svg",
+                    desc: "",
+                },
+                {
+                    title: "Participating Countries",
+                    number: 96,
+                    desc: "",
+                },
+                {
+                    title: "Flag Submissions",
+                    number: 25894,
+                    desc: "",
+                },
+                {
+                    title: "Incorrect Flag Submissions",
+                    number: 18554,
+                    desc: "",
+                },
+                {
+                    title: "Total Challenges",
+                    number: 40,
+                    desc: "",
+                }
+            ]} />
 
             <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
                 Board Members:
