@@ -73,7 +73,7 @@ const Content = () => {
                 },
                 {
                     title: "Outreach Coordinator - Evan Chin",
-                    src: "/EvanC.png", // TODO: This is using a local image, change SCUACM Picture!!!
+                    src: "EvanC.png", // TODO: This is using a local image, change SCUACM Picture!!!
                 }
             ]} />
 
