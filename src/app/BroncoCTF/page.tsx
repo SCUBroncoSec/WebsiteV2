@@ -1,11 +1,3 @@
-import ImageWithTextComponent from "@/components/BroncoCTF/imgandtxt";
-import FooterForBroncoCTF from "@/components/BroncoCTF/footerforbroncoctf";
-import HeaderBroncoCTF from "@/components/BroncoCTF/headerforBroncoCTF";
-import AboutUs from "@/components/BroncoCTF/CoolStats";
-import SponsorBroncoCTF from "@/components/BroncoCTF/Sponnsors";
-import AboutTheComp from "@/components/BroncoCTF/AbouttheComp";
-import FAQ from "@/components/BroncoCTF/FAQ";
-
 import HeroSection from "@/components/page/hero-section"
 import Content from "@/components/BroncoCTF/content";
 import Footer from "@/components/page/footer";
