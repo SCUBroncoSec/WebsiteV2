@@ -1,12 +1,12 @@
 import React from "react";
-import { FocusCards } from "./ui/focus-cards";
-import { HoverEffect } from "./ui/card-hover-effect";
+import { FocusCards } from "../ui/focus-cards";
+import { HoverEffect } from "../ui/card-hover-effect";
 
 const Content = () => {
     return (
         <div className="relative z-20">
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 What We Do:
             </span>
 
@@ -30,7 +30,7 @@ const Content = () => {
 
 
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 Board Members:
             </span>
 
@@ -77,7 +77,7 @@ const Content = () => {
                 }
             ]} />
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold">
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 Get Involved
             </span>
 

@@ -1,3 +1,6 @@
+
+
+
 .container {
   display: flex;
 
@@ -78,8 +81,8 @@ html {
 }
 
 .registration_Button:hover {
-  background-color: #8f1515;
-  transform: translateY(-2px);
+  /* background: linear-gradient(to bottom, #b11522 , #6e1a1c);  */
+  transform: translateY(-3px);
 }
 
 .registration_Button:active {
@@ -197,19 +200,16 @@ body {
 }
 
 .registration_Button {
-  margin-top: 100px;
   padding: 12px 28px;
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: 600;
   color: white;
-  background-color: #b31b1b; 
+  background: linear-gradient(to bottom, #B5000E , #69090C); 
   border: none;
   border-radius: 999px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  font-family: 'Orbitron', sans-serif;
-
-
+  transition: transform 0.2s ease;
+  font-family: var(--default-font-family);
 }
 
 

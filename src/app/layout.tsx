@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./styles.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://broncosec.com/WebsiteV2/", // replace with your production URL
     images: [
       {
-        url: "/icon.png",
+        url: "./icon.png",
         alt: "BroncoSec logo",
       },
     ],
