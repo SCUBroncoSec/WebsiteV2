@@ -62,9 +62,9 @@ const Content = () => {
                     idx: 4
                 },
                 {
-                    title: "Incorrect Flag Submissions",
-                    number: 18554,
-                    icon: "wrong-flag-colorized.svg",
+                    title: "Correct Flag Submissions",
+                    number: 7340,
+                    icon: "correct-flag-colorized.svg",
                     desc: "",
                     idx: 5
                 }
