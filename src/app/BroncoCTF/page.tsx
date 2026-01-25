@@ -12,7 +12,7 @@ export default function Subpage() {
     <Header headerImagePath="original-art/Horse_Knight_final.webp" />
     <main className="relative min-h-screen bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 pt-16">
       <div className="max-w-7xl w-full">
-        <HeroSection title="BroncoCTF" subtext="Santa Clara University's international cybersecurity competition" subtext2="February 28, 2025" imagePath="original-art/Horse_Knight_final.webp"> 
+        <HeroSection title="BroncoCTF" subtext="Santa Clara University's international cybersecurity competition" subtext2="February 28 - March 1" imagePath="original-art/Horse_Knight_final.webp"> 
         
           <button className="registration_Button" style={{zIndex: 1, cursor:"not-allowed"}}>Registration Coming Soon</button>
         

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "SCU's cyber security club",
   openGraph: {
     title: "BroncoSec",
-    description: "Santa Clara University's premier cyber security club",
+    description: "Santa Clara University's premier cybersecurity club",
     url: "https://broncosec.com/WebsiteV2/", // replace with your production URL
     images: [
       {

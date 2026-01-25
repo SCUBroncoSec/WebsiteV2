@@ -116,8 +116,8 @@ const Content = () => {
                       {
                         title: "Inquiries",
                         description:
-                          "Contact us at santaclara.broncosec@gmail.com",
-                        link: "mailto:santaclara.broncosec@gmail.com",
+                          "Contact us at broncosecclub@scu.edu",
+                        link: "mailto:broncosecclub@scu.edu",
                       },
                 ]} />
             </div>
