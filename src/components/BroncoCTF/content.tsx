@@ -3,6 +3,7 @@ import { FocusCards } from "../ui/focus-cards";
 import { HoverEffect } from "../ui/card-hover-effect";
 import { TwoColumn } from "../ui/two-column";
 import { NumberFocusCards } from "../ui/number-focus-cards";
+import { Gallery } from "../ui/gallery";
 
 
 const Content = () => {
@@ -99,6 +100,28 @@ const Content = () => {
             <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 Sponsors
             </span>
+
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                ??? Tier
+            </span>
+
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+                        <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                ??? Tier
+            </span>
+
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+
+
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                ??? Tier
+            </span>
+
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+
 
                 <TwoColumn img="original-art/Final_Horse_ad_final.webp" imgAlt="BroncoCTF Sponsorship"
                 flip={true}>
