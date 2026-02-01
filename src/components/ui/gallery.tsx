@@ -13,11 +13,11 @@ export function Gallery({ images, altPrefix = "Image", className }: GalleryProps
     <div
       className={className}
       style={{
-        display: "flex", // center it
-        // gridTemplateColumns: "repeat(3, 1fr)",
-        // gap: 12,
-        // alignItems: "stretch",
-        // placeItems: "center",
+        display: "grid", 
+        gridTemplateColumns: "repeat(1, 1fr)",
+        gap: 12,
+        alignItems: "stretch",
+        placeItems: "center",
       }}
     >
       {images.map((src, i) => (

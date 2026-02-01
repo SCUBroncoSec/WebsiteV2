@@ -102,13 +102,13 @@ const Content = () => {
             </span>
 
             <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                ??? Tier
+                Platinum Tier
             </span>
 
             <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
 
                         <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                ??? Tier
+                Gold Tier
             </span>
 
             <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
@@ -116,18 +116,19 @@ const Content = () => {
 
 
             <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                ??? Tier
+                Silver Tier
             </span>
+
+
+
 
             <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
 
 
 
-                <TwoColumn img="original-art/Final_Horse_ad_final.webp" imgAlt="BroncoCTF Sponsorship"
-                flip={true}>
-                    We're looking for sponsors! Please reach out at broncosecclub@scu.edu if you'd like to help our competition!
-
-            </TwoColumn>
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 text-amber-50 text-lg font-bold text-center">
+                                We're looking for sponsors! Please reach out at broncosecclub@scu.edu if you'd like to help our competition!
+            </span>
 
         </div>
     )
