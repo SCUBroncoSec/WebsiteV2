@@ -3,6 +3,7 @@ import { FocusCards } from "../ui/focus-cards";
 import { HoverEffect } from "../ui/card-hover-effect";
 import { TwoColumn } from "../ui/two-column";
 import { NumberFocusCards } from "../ui/number-focus-cards";
+import { Gallery } from "../ui/gallery";
 
 
 const Content = () => {
@@ -100,11 +101,34 @@ const Content = () => {
                 Sponsors
             </span>
 
-                <TwoColumn img="original-art/Final_Horse_ad_final.webp" imgAlt="BroncoCTF Sponsorship"
-                flip={true}>
-                    We're looking for sponsors! Please reach out at broncosecclub@scu.edu if you'd like to help our competition!
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                Platinum Tier
+            </span>
 
-            </TwoColumn>
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+                        <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                Gold Tier
+            </span>
+
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+
+
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
+                Silver Tier
+            </span>
+
+
+
+
+            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
+
+
+
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 text-amber-50 text-lg font-bold text-center">
+                                We're looking for sponsors! Please reach out at broncosecclub@scu.edu if you'd like to help our competition!
+            </span>
 
         </div>
     )
