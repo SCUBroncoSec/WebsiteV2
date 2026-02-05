@@ -4,6 +4,7 @@ import Footer from "@/components/page/footer";
 
 import Link from "next/link";
 import Header from "@/components/page/header";
+import { on } from "events";
 
 
 export default function Subpage() {
@@ -14,7 +15,7 @@ export default function Subpage() {
       <div className="max-w-7xl w-full">
         <HeroSection title="BroncoCTF" subtext="Santa Clara University's international cybersecurity competition" subtext2="February 28 - March 1" imagePath="original-art/Horse_Knight_final.webp"> 
         
-          <button className="registration_Button" style={{zIndex: 1, cursor:"not-allowed"}}>Registration Coming Soon</button>
+          <button className="registration_Button" style={{zIndex: 1} }><a href="https://forms.gle/sGJys3UNZrN5bbDK9">Register Now</a></button>
         
         </HeroSection>
         <Content />
