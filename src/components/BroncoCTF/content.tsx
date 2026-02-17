@@ -21,6 +21,27 @@ const Content = () => {
                 BroncoCTF 2026 will be our fifth CTF, and our third year hosting the event globally!
             </TwoColumn>
 
+            
+            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
+                Prize Pool
+            </span>
+
+
+            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 text-amber-50 text-lg font-bold text-center">
+                <h1 className="text-6xl">🥇</h1>
+                First Place: $300
+                <a className="text-decoration: underline display: inline" href="https://www.sans.org/cyber-security-courses/foundations">+ SEC275 Scholarship</a> <a className="text-decoration: underline display: inline" href="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/">+ GFACT Certification Scholarship</a> <br/>
+                <h1 className="text-6xl">🥈</h1>
+                Second Place: $200 <br/> <br/>
+                <h1 className="text-6xl">🥉</h1>
+                Thrid Place: $100 <br/> <br/>
+                <h1 className="text-6xl">🙋</h1>
+                Best Solo Score: BroncoCTF 2026 Hoodie (Medium Size) <br/> <br/>
+            </span>
+
+
+
+
             <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 2025 Statistics
             </span>
@@ -98,37 +119,15 @@ const Content = () => {
 
 
             <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
-                Sponsors
-            </span>
-
-            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                Platinum Tier
-            </span>
-
-            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
-
-                        <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                Gold Tier
-            </span>
-
-            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
-
-
-
-            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-4xl font-bold text-center">
-                Silver Tier
+                Thank You to our Sponsor
             </span>
 
 
+            <img src="SANS-White.png" alt="SANS Logo" className="block w-1/4 mx-auto" />
+            {/* <Gallery images={["SANS-White.png"]} /> */}
 
 
-            <Gallery images={["original-art/Final_Horse_ad_final.webp"]} />
 
-
-
-            <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 text-amber-50 text-lg font-bold text-center">
-                                We're looking for sponsors! Please reach out at broncosecclub@scu.edu if you'd like to help our competition!
-            </span>
 
         </div>
     )
