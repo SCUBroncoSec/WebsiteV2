@@ -39,12 +39,15 @@ const Content = () => {
                         element.firstChild.textContent +=
                         '2 - 3y_y0u_f';
                     }
+                    const audio = new Audio('ding.oga');
+                    audio.play();
+
                         }} 
                 className="cursor-pointer">
                      flags 
                 </span> hidden in programs, cryptosystems, files, and even games! Use your ethical hacking skills to solve digital puzzles involving real-world technologies. <br /><br />
                 There are challenges for complete beginners and experienced hackers alike. Cash prizes are awarded to top Santa Clara University students, while the world can compete for bragging rights. <br /><br />
-                BroncoCTF <a href="/7.txt" download="7.txt">2026</a> will be our fifth CTF, and our third year hosting the event globally! 
+                BroncoCTF <a href="/7.txt" download="7.txt" onClick={() => {      const audio = new Audio('ding.oga'); audio.play();}}>2026</a> will be our fifth CTF, and our third year hosting the event globally! 
                 <div id="addtext"> </div>
 
             </TwoColumn>
@@ -76,6 +79,8 @@ const Content = () => {
                         element.firstChild.textContent +=
                         '🍪';
                     }
+                    const audio = new Audio('puzzle.oga');
+                    audio.play();
 
                         }} 
                 className="cursor-pointer">
