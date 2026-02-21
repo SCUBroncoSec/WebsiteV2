@@ -10,6 +10,7 @@ export function TwoColumn({
   children,
   flip = false,
 }: {
+  id?: string;
   img: string;
   imgAlt?: string;
   flip?: boolean;

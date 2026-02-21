@@ -12,6 +12,8 @@ const Footer = ({ children }:
             BroncoCTF content structure by <a className="text-decoration: underline" href="https://github.com/evanc517" target="_blank" rel="noopener noreferrer">@evanc517</a>
             <br/>
             Art by Anni L. '28
+            <br/>
+            1 - bronco&#123;h
                 </p>
             </div>
         </div>

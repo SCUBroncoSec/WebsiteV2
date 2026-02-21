@@ -1,9 +1,25 @@
-import React from "react";
+'use client';
+import React, { useRef, useEffect } from "react";
 import { FocusCards } from "../ui/focus-cards";
 import { HoverEffect } from "../ui/card-hover-effect";
 import { TwoColumn } from "../ui/two-column";
 import { NumberFocusCards } from "../ui/number-focus-cards";
 import { Gallery } from "../ui/gallery";
+
+function HTMLComment({ comment }: { comment: string }) {
+  const ref = useRef<HTMLScriptElement>(null);
+
+  useEffect(() => {
+    // This runs after the component mounts in the browser
+    if (ref.current) {
+      ref.current.outerHTML = `<!-- ${comment} -->`;
+    }
+  }, [comment]);
+
+  // A placeholder that will be replaced by the comment in the DOM
+  return <script ref={ref} type="text/placeholder" />;
+}
+
 
 
 const Content = () => {
@@ -16,9 +32,21 @@ const Content = () => {
 
             <TwoColumn img="original-art/Final_Horse_With_Flag_final.webp" imgAlt="BroncoCTF">
                 BroncoCTF is an international CTF competition hosted by BroncoSec. It runs in conjunction with <a className="text-decoration: underline" href="https://hackforhumanity.io/">Hack for Humanity</a>, Santa Clara University's social good hackathon. <br /><br />
-                In BroncoCTF, teams of students solve various cybersecurity challenges by hunting for secret flags hidden in programs, cryptosystems, files, and even games! Use your ethical hacking skills to solve digital puzzles involving real-world technologies. <br /><br />
+                In BroncoCTF, teams of students solve various cybersecurity challenges by hunting for secret <span onClick={() => {
+                    const element = document.getElementById('addtext');
+                    console.log(element);
+                    if (element && element.firstChild) {
+                        element.firstChild.textContent +=
+                        '2 - 3y_y0u_f';
+                    }
+                        }} 
+                className="cursor-pointer">
+                     flags 
+                </span> hidden in programs, cryptosystems, files, and even games! Use your ethical hacking skills to solve digital puzzles involving real-world technologies. <br /><br />
                 There are challenges for complete beginners and experienced hackers alike. Cash prizes are awarded to top Santa Clara University students, while the world can compete for bragging rights. <br /><br />
-                BroncoCTF 2026 will be our fifth CTF, and our third year hosting the event globally!
+                BroncoCTF <a href="/7.txt" download="7.txt">2026</a> will be our fifth CTF, and our third year hosting the event globally! 
+                <div id="addtext"> </div>
+
             </TwoColumn>
 
             
@@ -35,9 +63,28 @@ const Content = () => {
                 Second Place: $200 <br/> <br/>
                 <h1 className="text-6xl">🥉</h1>
                 Thrid Place: $100 <br/> <br/>
-                <h1 className="text-6xl">🙋</h1>
+                <h1 className="text-6xl"> <span id="cookie" onClick={() => {
+                    const n = "KEY4";
+                    const v = "4 - m_4ll_w1";
+                    // const expirationDate = new Date();
+                    // expirationDate.setTime(expirationDate.getTime() + (1)); // 1 year
+                    document.cookie = `${n}=${v}; path=/`;
+
+                    const element = document.getElementById('cookie');
+                    console.log(element);
+                    if (element && element.firstChild) {
+                        element.firstChild.textContent +=
+                        '🍪';
+                    }
+
+                        }} 
+                className="cursor-pointer">
+                     🙋 
+                </span></h1>
                 Best Solo Score: BroncoCTF 2026 Hoodie (Medium Size) <br/> <br/>
             </span>
+
+            {/*     router.push('/destination-page');   */}
 
 
 
@@ -84,7 +131,7 @@ const Content = () => {
                     idx: 4
                 },
                 {
-                    title: "Correct Flag Submissions",
+                    title: "8 - _4t_411}",
                     number: 7340,
                     icon: "correct-flag-colorized.svg",
                     desc: "",
@@ -92,7 +139,7 @@ const Content = () => {
                 }
             ]} />
 
-            <span className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
+            <span  className="pt-36 pb-20 flex flex-col items-center justify-center relative z-20 bg-linear-to-b from-red-600 to-red-950 bg-clip-text text-transparent text-7xl font-bold text-center">
                 Past Repositories
             </span>
 
@@ -115,6 +162,12 @@ const Content = () => {
                             "In-person competition featuring a live tiebreaker",
                         link: "https://github.com/SCUBroncoSec/BroncoCTF-2023-Internal",
                     },
+                    {
+                        title: "BroncoCTF 2026...?",
+                        description:
+                            "",
+                        link: "/BroncoCTF?KEY=6-ut31y_n0",
+                    }
                         ]} />
 
 
@@ -124,13 +177,21 @@ const Content = () => {
 
 
             <img src="SANS-White.png" alt="SANS Logo" className="block w-1/4 mx-auto" />
+            <HTMLComment comment="!!! 5 - th_4b501 !!!" />
             {/* <Gallery images={["SANS-White.png"]} /> */}
-
-
-
-
         </div>
     )
 }
 
 export default Content
+
+/*
+1 - bronco{h
+2 - 3y_y0u_f
+3 - 0und_th3
+4 - m_4ll_w1
+5 - th_4b501
+6 - ut31y_n0
+7 - _w0rr135
+8 - _4t_411}
+*/
