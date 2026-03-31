@@ -207,7 +207,7 @@ body {
   background: linear-gradient(to bottom, #B5000E , #69090C); 
   border: none;
   border-radius: 999px;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: transform 0.2s ease;
   font-family: var(--default-font-family);
 }
