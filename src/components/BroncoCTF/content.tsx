@@ -59,13 +59,13 @@ const Content = () => {
 
 
             <span className="pt-16 pb-8 flex flex-col items-center justify-center relative z-20 text-amber-50 text-lg font-bold text-center">
-                <h1 className="text-6xl">🥇</h1>
+                {/* COMMENTED OUT FOR RERUN <h1 className="text-6xl">🥇</h1>
                 First Place: $300
                 <a className="text-decoration: underline display: inline" href="https://www.sans.org/cyber-security-courses/foundations">+ SEC275 Scholarship</a> <a className="text-decoration: underline display: inline" href="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/">+ GFACT Certification Scholarship</a> <br/>
                 <h1 className="text-6xl">🥈</h1>
                 Second Place: $200 <br/> <br/>
                 <h1 className="text-6xl">🥉</h1>
-                Thrid Place: $100 <br/> <br/>
+                Thrid Place: $100 <br/> <br/> */}
                 <h1 className="text-6xl"> <span id="cookie" onClick={() => {
                     const n = "KEY4";
                     const v = "4 - m_4ll_w1";
@@ -86,7 +86,8 @@ const Content = () => {
                 className="cursor-pointer">
                      🙋 
                 </span></h1>
-                Best Solo Score: BroncoCTF 2026 Hoodie (Medium Size) <br/> <br/>
+                Online Bragging Rights
+                {/* Best Solo Score: BroncoCTF 2026 Hoodie (Medium Size) <br/> <br/> */}
             </span>
 
             {/*     router.push('/destination-page');   */}
